@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".SecondActivity"
     android:orientation="vertical"
     android:gravity="center">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextName"
-        android:hint="Masukan Nama Anda"/>
+        android:id="@+id/addRess"
+        android:hint="Masukan Alamat"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnToSecond"
-        android:text="TAP TO SECOND ACTIVITY"/>
+        android:id="@+id/btnDismiss"
+        android:text="Dismiss"/>
 
 </LinearLayout>

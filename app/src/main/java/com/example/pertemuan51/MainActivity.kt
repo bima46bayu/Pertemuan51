@@ -11,6 +11,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    companion object {
+        const val EXTRA_NAME = "extra_name"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         with(binding) {
             btnToSecond.setOnClickListener{
                 val intentSecondActivity = Intent(this@MainActivity,SecondActivity::class.java)
+
+                val name = editTextName.text.toString()
+                intentSecondActivity.putExtra(EXTRA_NAME,name)
 
                 startActivity(intentSecondActivity)
             }
